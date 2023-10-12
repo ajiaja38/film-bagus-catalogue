@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+* {
+  font-family: "Varela Round", sans-serif;
+}
+
+body {
+  @apply bg-[#2C394B];
+}
+
+main {
+  @apply px-5 mx-auto flex flex-col justify-center mt-[5rem] md:mt-[8rem] text-white lg:px-20;
+}
+
+movie-list {
+  @apply mt-5 flex flex-wrap justify-around box-border;
+}
+
+movie-item {
+  @apply mb-3 md:mb-8 flex flex-col w-[100px] md:w-[200px] ease-in-out duration-200 relative;
+}
+
+search-list {
+  @apply fixed hidden flex-col top-20 md:top-24 right-4 md:right-10 w-2/3 md:w-2/5 bg-dark rounded-md text-white p-3 box-border max-h-[80%] shadow-md overflow-y-auto;
+}

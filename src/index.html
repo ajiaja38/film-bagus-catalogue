@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Film Bagus</title>
+</head>
+
+<body>
+  <header>
+    <app-bar></app-bar>
+  </header>
+  <main>
+    <hero-section></hero-section>
+    <div class="flex justify-center">
+      <div class="container">
+        <div class="flex container p-3 md:p-5 bg-[#4B5D67] rounded-md relative">
+          <div class="bg-[#FF4C29] h-12 md:h-16 rounded-l-md w-2 absolute top-0 left-0"></div>
+          <h1 class="font-bold ml-1">Popular Movies</h1>
+        </div>
+        <movie-list></movie-list>
+      </div>
+
+      <div id="detailMovieCard"
+        class="fixed top-0 left-0 bottom-0 right-0 bg-dark/50 backdrop-blur-sm z-10 hidden justify-center items-center">
+        <div id="movieCard"
+          class="text-white w-[80%] md:w-[65%] h-[60%] md:h-[83%] relative ease-in-out duration-200 hover:scale-105 flex">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <search-list></search-list>
+  <footer>
+    <footer-bar></footer-bar>
+  </footer>
+</body>
+
+</html>
